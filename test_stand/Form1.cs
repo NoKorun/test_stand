@@ -29,11 +29,17 @@ namespace test_stand
 
         private void pid_input_button_Click(object sender, EventArgs e)
         {
+            if (testControl1.ProgramStatus == "Testing")
+            {
+                MessageBox.Show("Test is already running. Please wait for it to finish.");
+                return;
+            }
             if (pids.Contains(pidBox.Text))
             {
                 //testControl1.Visible = true; // Show the control if PID is valid
                 testControl1.InputText = pidBox.Text;
                 testControl1.ProgramStatus = "AwaitingTest";
+
                 //pid_input_button.Visible = false; // Disable the button after valid input
                 //pidBox.Visible = false; // Hide the PID input box after valid input
             }
