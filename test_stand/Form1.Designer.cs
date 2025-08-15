@@ -39,9 +39,9 @@
             // 
             // pid_input_button
             // 
-            this.pid_input_button.Location = new System.Drawing.Point(367, 337);
+            this.pid_input_button.Location = new System.Drawing.Point(350, 300);
             this.pid_input_button.Name = "pid_input_button";
-            this.pid_input_button.Size = new System.Drawing.Size(90, 38);
+            this.pid_input_button.Size = new System.Drawing.Size(100, 40);
             this.pid_input_button.TabIndex = 1;
             this.pid_input_button.Text = "Выбор изделия";
             this.pid_input_button.UseVisualStyleBackColor = true;
@@ -49,27 +49,29 @@
             // 
             // pidBox
             // 
-            this.pidBox.Location = new System.Drawing.Point(357, 268);
+            this.pidBox.Location = new System.Drawing.Point(330, 270);
             this.pidBox.Name = "pidBox";
-            this.pidBox.Size = new System.Drawing.Size(100, 20);
+            this.pidBox.Size = new System.Drawing.Size(140, 20);
             this.pidBox.TabIndex = 2;
+            this.pidBox.Text = "Идентификатор изделия";
             this.pidBox.TextChanged += new System.EventHandler(this.pidBox_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(322, 68);
+            this.label1.Location = new System.Drawing.Point(290, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Ожидается ввод идентификатора изделия";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // stop_test_button
             // 
-            this.stop_test_button.Location = new System.Drawing.Point(374, 219);
+            this.stop_test_button.Location = new System.Drawing.Point(350, 200);
             this.stop_test_button.Name = "stop_test_button";
-            this.stop_test_button.Size = new System.Drawing.Size(75, 23);
+            this.stop_test_button.Size = new System.Drawing.Size(100, 40);
             this.stop_test_button.TabIndex = 8;
             this.stop_test_button.Text = "Остановка теста";
             this.stop_test_button.UseVisualStyleBackColor = true;
@@ -77,9 +79,9 @@
             // 
             // test3
             // 
-            this.test3.Location = new System.Drawing.Point(554, 169);
+            this.test3.Location = new System.Drawing.Point(500, 150);
             this.test3.Name = "test3";
-            this.test3.Size = new System.Drawing.Size(75, 23);
+            this.test3.Size = new System.Drawing.Size(100, 30);
             this.test3.TabIndex = 7;
             this.test3.Text = "Тест3";
             this.test3.UseVisualStyleBackColor = true;
@@ -87,9 +89,9 @@
             // 
             // test2
             // 
-            this.test2.Location = new System.Drawing.Point(374, 169);
+            this.test2.Location = new System.Drawing.Point(350, 150);
             this.test2.Name = "test2";
-            this.test2.Size = new System.Drawing.Size(75, 23);
+            this.test2.Size = new System.Drawing.Size(100, 30);
             this.test2.TabIndex = 6;
             this.test2.Text = "Тест2";
             this.test2.UseVisualStyleBackColor = true;
@@ -97,9 +99,9 @@
             // 
             // test1
             // 
-            this.test1.Location = new System.Drawing.Point(177, 169);
+            this.test1.Location = new System.Drawing.Point(150, 150);
             this.test1.Name = "test1";
-            this.test1.Size = new System.Drawing.Size(75, 23);
+            this.test1.Size = new System.Drawing.Size(100, 30);
             this.test1.TabIndex = 5;
             this.test1.Text = "Тест1";
             this.test1.UseVisualStyleBackColor = true;
@@ -109,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 361);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.stop_test_button);
             this.Controls.Add(this.test3);
@@ -117,7 +119,9 @@
             this.Controls.Add(this.test1);
             this.Controls.Add(this.pidBox);
             this.Controls.Add(this.pid_input_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Программа тестирования";
             this.ResumeLayout(false);
             this.PerformLayout();

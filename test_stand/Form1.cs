@@ -85,7 +85,7 @@ namespace test_stand
         {
             if (programStatus == "Testing")
             {
-                MessageBox.Show("Test is already running. Please wait for it to finish.");
+                MessageBox.Show("Тест уже запущен, дождитесь его окончания");
                 return;
             }
             if (pids.Contains(pidBox.Text))
@@ -100,8 +100,7 @@ namespace test_stand
             }
             else
             {
-                MessageBox.Show("Invalid PID. Please enter a valid PID.");
-                //testControl1.Visible = false; // Hide the control if PID is invalid
+                MessageBox.Show("Неподходящий номер прибора");
             }
         }
 
@@ -133,7 +132,7 @@ namespace test_stand
             saveToJson(result, productID, resultsDirectory);
             programStatus = "Awaiting test";
             label1.Text = "Ожидается начало теста";
-            MessageBox.Show("Тест заврешен");
+            //MessageBox.Show("Тест заврешен");
         }
 
         private async void test2_Click(object sender, EventArgs e)
